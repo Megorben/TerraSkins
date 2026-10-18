@@ -12,12 +12,12 @@ namespace TerraSkins.Common.Effects;
 /// </summary>
 public static class BlackHoleRenderer
 {
-	public sealed record Settings(int Clumps = 46, int Infall = 14, bool Jets = false, float Tilt = 0.3f, float Angle = -0.14f);
+	public sealed record Settings(int Clumps = 56, int Infall = 14, bool Jets = false, float Tilt = 0.32f, float Angle = -0.14f);
 
 	public static void DrawBack(in FxFrame f, Vector2 center, float radius, FxPalette palette, Settings settings)
 	{
 		float t = f.Time;
-		float coreRadius = radius * 0.3f;
+		float coreRadius = radius * 0.37f;
 
 		// Gravity well haze.
 		f.Bloom(center, palette.EdgeAt(t * 0.1f) * 0.32f, radius * 1.7f);
@@ -30,17 +30,16 @@ public static class BlackHoleRenderer
 		DrawDiskHalf(f, center, radius, palette, settings, front: false);
 		DrawClumps(f, center, radius, palette, settings, front: false);
 
-		// The far side of the disk, bent over and under the shadow by gravity.
+		// The far side of the disk, bent over and under the shadow by gravity: one soft ring hugging the shadow.
 		Texture2D ring = FxTextures.Ring.Value;
-		float ringScale = radius * 0.5f / (ring.Width * 0.44f);
+		float ringScale = coreRadius * 1.28f / (ring.Width * 0.44f);
 		float flicker = 0.85f + 0.15f * MathF.Sin(t * 5.3f);
-		f.Glow(ring, center, palette.PrimaryAt(t * 0.1f) * 0.75f * flicker, settings.Angle, new Vector2(ringScale * 1.06f, ringScale));
-		f.Glow(ring, center, palette.Core * 0.35f, settings.Angle, new Vector2(ringScale * 0.86f, ringScale * 0.82f));
+		f.Glow(ring, center, palette.PrimaryAt(t * 0.1f) * (0.85f * flicker), settings.Angle, new Vector2(ringScale * 1.04f, ringScale));
 
-		// Photon ring.
+		// Photon ring, the thin bright edge of the shadow.
 		Texture2D thin = FxTextures.RingThin.Value;
-		float photonScale = coreRadius * 1.13f / (thin.Width * 0.47f);
-		f.Glow(thin, center, palette.Core * 0.95f, 0f, photonScale);
+		float photonScale = coreRadius * 1.08f / (thin.Width * 0.47f);
+		f.Glow(thin, center, palette.Core, 0f, photonScale);
 
 		// Shadow. Drawn alpha blended so it actually blots out whatever is behind.
 		Texture2D glow = FxTextures.Glow.Value;
@@ -86,9 +85,9 @@ public static class BlackHoleRenderer
 		float t = f.Time;
 
 		float pulse = 0.9f + 0.1f * MathF.Sin(t * 2.1f);
-		f.Glow(disk, center, source, palette.PrimaryAt(t * 0.1f) * 0.85f * pulse, settings.Angle, origin, scale);
-		f.Glow(disk, center, source, palette.Core * 0.55f, settings.Angle, origin, scale * 0.7f);
-		f.Glow(disk, center, source, palette.EdgeAt(t * 0.1f) * 0.5f, settings.Angle, origin, scale * 1.18f);
+		f.Glow(disk, center, source, palette.EdgeAt(t * 0.1f) * 0.65f, settings.Angle, origin, scale * 1.15f);
+		f.Glow(disk, center, source, palette.PrimaryAt(t * 0.1f) * (pulse), settings.Angle, origin, scale);
+		f.Glow(disk, center, source, palette.Core * 0.6f, settings.Angle, origin, scale * 0.72f);
 	}
 
 	private static void DrawClumps(in FxFrame f, Vector2 center, float radius, FxPalette palette, Settings settings, bool front)
@@ -121,20 +120,23 @@ public static class BlackHoleRenderer
 
 	private static void DrawInfall(in FxFrame f, Vector2 center, float radius, FxPalette palette, Settings settings)
 	{
-		Texture2D streak = FxTextures.Streak.Value;
-		Vector2 origin = streak.Size() * 0.5f;
+		Texture2D glow = FxTextures.GlowSharp.Value;
 		float t = f.Time;
 
 		for (int i = 0; i < settings.Infall; i++) {
 			float age = FxRandom.Cycle(t, i, settings.Infall, 2.4f, out int gen);
-			float r = radius * MathHelper.Lerp(1.55f, 0.33f, age * age);
-			float angle = FxRandom.Float(gen, i, 21) * MathHelper.TwoPi + age * 4.2f;
-			Vector2 p = Disk(angle, r, settings, out _);
-			Vector2 prev = Disk(angle - 0.18f, r * 1.05f, settings, out _);
-			Vector2 dir = p - prev;
-			float alpha = MathF.Sin(age * MathF.PI) * 0.8f;
-			Color color = Color.Lerp(palette.AccentAt(t * 0.1f), palette.Core, age) * alpha;
-			f.Glow(streak, center + p, null, color, dir.ToRotation(), origin, new Vector2(dir.Length() * 2.2f / streak.Width + 0.05f, 1.6f / streak.Height));
+			float startAngle = FxRandom.Float(gen, i, 21) * MathHelper.TwoPi;
+			float alpha = MathF.Sin(age * MathF.PI) * 0.9f;
+			Color color = Color.Lerp(palette.PrimaryAt(t * 0.1f), palette.Core, age);
+
+			// A mote followed by a short tail, curving along its inward spiral.
+			for (int k = 0; k < 4; k++) {
+				float a = MathF.Max(0f, age - k * 0.025f);
+				float r = radius * MathHelper.Lerp(1.5f, 0.38f, a * a);
+				Vector2 p = Disk(startAngle + a * 4.2f, r, settings, out _);
+				float size = (3.2f - k * 0.6f) / glow.Width * 2f;
+				f.Glow(glow, center + p, color * (alpha * (1f - k * 0.22f)), 0f, size);
+			}
 		}
 	}
 

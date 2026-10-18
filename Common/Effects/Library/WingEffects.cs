@@ -70,7 +70,7 @@ public abstract class EtherealWings(string name, FxPalette palette) : SkinEffect
 /// <summary> Large feathered wings of light. </summary>
 public class SeraphWings(string name, FxPalette palette) : EtherealWings(name, palette)
 {
-	private static readonly Vector2 Root = new(14f, 114f);
+	private static readonly Vector2 Root = new(10f, 70f);
 
 	protected override void DrawWing(in FxFrame f, int side, float flap, bool near)
 	{
@@ -86,7 +86,7 @@ public class SeraphWings(string name, FxPalette palette) : EtherealWings(name, p
 		// Sparkles along the leading edge.
 		for (int i = 0; i < 3; i++) {
 			float k = 0.45f + i * 0.25f;
-			Vector2 edge = WingPoint(f, new Vector2(104f, -100f) * k * scale, side, flap);
+			Vector2 edge = WingPoint(f, new Vector2(96f, -60f) * k * scale, side, flap);
 			float twinkle = 0.5f + 0.5f * MathF.Sin(t * 3f + i * 2f + side);
 			f.Sparkle(edge, Palette.Core * (twinkle * alpha), 9f * twinkle);
 		}
@@ -100,7 +100,7 @@ public class SeraphWings(string name, FxPalette palette) : EtherealWings(name, p
 		Texture2D feather = FxTextures.Feather.Value;
 		for (int i = 0; i < 3; i++) {
 			float age = FxRandom.Cycle(f.Time, i, 3, 3.4f, out int gen);
-			var start = new Vector2(MathHelper.Lerp(30f, 90f, FxRandom.Float(gen, i, side + 5)), -MathHelper.Lerp(10f, 60f, FxRandom.Float(gen, i, 9))) * 0.42f;
+			var start = new Vector2(MathHelper.Lerp(20f, 90f, FxRandom.Float(gen, i, side + 5)), MathHelper.Lerp(-50f, 30f, FxRandom.Float(gen, i, 9))) * 0.42f;
 			Vector2 p = WingPoint(f, start, FxRandom.Float(gen, i, 3) < 0.5f ? -1 : 1, flap) + new Vector2(MathF.Sin(age * 6f + i) * 6f, age * 34f * f.GravDir);
 			float alpha = MathF.Sin(age * MathF.PI) * 0.8f;
 			f.Glow(feather, p, null, Palette.Core * alpha, MathF.Sin(age * 5f + i) * 0.8f, feather.Size() * 0.5f, new Vector2(0.45f));
@@ -170,7 +170,7 @@ public class CrystalWings(string name, FxPalette palette) : EtherealWings(name, 
 /// <summary> Wings of living fire. </summary>
 public class PhoenixWings(string name, FxPalette palette) : EtherealWings(name, palette)
 {
-	private static readonly Vector2 Root = new(14f, 114f);
+	private static readonly Vector2 Root = new(10f, 70f);
 
 	protected override void DrawWing(in FxFrame f, int side, float flap, bool near)
 	{
@@ -192,7 +192,7 @@ public class PhoenixWings(string name, FxPalette palette) : EtherealWings(name, 
 			float age = FxRandom.Cycle(t, i, count, 0.9f, out int gen);
 			float along = FxRandom.Float(gen, i, side + 3);
 			float bone = FxRandom.Float(gen, i, 7);
-			var local = new Vector2(100f, -100f + bone * 70f) * along * scale;
+			var local = new Vector2(96f, -60f + bone * 90f) * along * scale;
 			Vector2 p = WingPoint(f, local, side, flap) + new Vector2(0f, -age * 14f * f.GravDir);
 			float size = MathF.Sin(age * MathF.PI) * 0.28f;
 			f.Glow(flame, p, null, Palette.Ramp(age, t * 0.1f) * (alpha * (1f - age)), f.GravDir < 0f ? MathF.PI : 0f, origin, new Vector2(size * 0.8f, size));

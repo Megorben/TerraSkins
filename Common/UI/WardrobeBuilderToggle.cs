@@ -13,8 +13,6 @@ public class WardrobeBuilderToggle : BuilderToggle
 {
 	public override string Texture => "TerraSkins/Assets/Textures/UI/WardrobeToggle";
 
-	public override string HoverTexture => "TerraSkins/Assets/Textures/UI/WardrobeToggle_Hover";
-
 	public override bool Active() => TerraSkinsClientConfig.Instance?.ShowWardrobeButton ?? true;
 
 	public override int NumberOfStates => 1;

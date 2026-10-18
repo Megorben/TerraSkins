@@ -37,7 +37,6 @@ public class FxTextures : ModSystem
 	public static Asset<Texture2D> WingCrystal { get; private set; }
 	public static Asset<Texture2D> Butterfly { get; private set; }
 	public static Asset<Texture2D> Eye { get; private set; }
-	public static Asset<Texture2D> Shard { get; private set; }
 	public static Asset<Texture2D> Nebula { get; private set; }
 	public static Asset<Texture2D> Planet { get; private set; }
 	public static Asset<Texture2D> Pixel { get; private set; }
@@ -74,7 +73,6 @@ public class FxTextures : ModSystem
 		WingCrystal = Request("WingCrystal");
 		Butterfly = Request("Butterfly");
 		Eye = Request("Eye");
-		Shard = Request("Shard");
 		Nebula = Request("Nebula");
 		Planet = Request("Planet");
 		Pixel = Request("Pixel");
@@ -83,7 +81,7 @@ public class FxTextures : ModSystem
 	public override void Unload()
 	{
 		Glow = GlowSharp = Disc = Ring = RingThin = Star = Streak = Smoke = Disk = Galaxy = RuneCircle = Runes = Ray = Orb = Crystal = Blade = null;
-		Flame = Bubble = Petals = Snowflake = Heart = Notes = Feather = WingFeathered = WingCrystal = Butterfly = Eye = Shard = Nebula = Planet = Pixel = null;
+		Flame = Bubble = Petals = Snowflake = Heart = Notes = Feather = WingFeathered = WingCrystal = Butterfly = Eye = Nebula = Planet = Pixel = null;
 	}
 
 	private static Asset<Texture2D> Request(string name) => ModContent.Request<Texture2D>(Folder + name);
