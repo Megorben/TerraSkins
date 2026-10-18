@@ -50,6 +50,20 @@ jobs:
           ls -la dist
           test -f dist/TerraSkins.tmod
 
+      - name: Smoke test (load the mod on a dedicated server)
+        run: |
+          MODS_DIR="$(dirname "$(find "$HOME" -name TerraSkins.tmod | head -1)")"
+          echo '["TerraSkins"]' > "$MODS_DIR/enabled.json"
+          cd tModLoader
+          timeout 300 dotnet tModLoader.dll -server -autocreate 1 -worldname Smoke -world "$RUNNER_TEMP/Smoke.wld" -maxplayers 2 -port 7779 < /dev/null > "$RUNNER_TEMP/server.out" 2>&1 || true
+          LOG="$(find "$HOME" -name server.log | head -1)"
+          echo "---- server output (tail)"; tail -40 "$RUNNER_TEMP/server.out"
+          echo "---- server.log (tail)"; tail -80 "$LOG"
+          if grep -qiE "TerraSkins.*(exception|error)|(exception|error).*TerraSkins" "$LOG"; then
+            echo "TerraSkins failed to load"; exit 1
+          fi
+          grep -q "Server started" "$RUNNER_TEMP/server.out" || grep -qi "listening on port" "$RUNNER_TEMP/server.out"
+
       - name: Upload .tmod
         uses: actions/upload-artifact@v4
         with:

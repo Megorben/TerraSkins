@@ -1,0 +1,591 @@
+Mods: {
+	TerraSkins: {
+		Items: {
+			EventHorizon: {
+				DisplayName: "Горизонт событий"
+				Tooltip: "За вашей спиной чёрная дыра пожирает свет"
+			}
+			VioletSingularity: {
+				DisplayName: "Фиолетовая сингулярность"
+				Tooltip: "За вашей спиной чёрная дыра пожирает свет"
+			}
+			AzureAbyss: {
+				DisplayName: "Лазурная бездна"
+				Tooltip: "За вашей спиной чёрная дыра пожирает свет"
+			}
+			Quasar: {
+				DisplayName: "Квазар"
+				Tooltip: "За вашей спиной чёрная дыра пожирает свет"
+			}
+			MilkyWay: {
+				DisplayName: "Млечный Путь"
+				Tooltip: "За вашей спиной медленно вращается целая галактика"
+			}
+			NebulaGalaxy: {
+				DisplayName: "Галактика туманностей"
+				Tooltip: "За вашей спиной медленно вращается целая галактика"
+			}
+			EmeraldGalaxy: {
+				DisplayName: "Изумрудная галактика"
+				Tooltip: "За вашей спиной медленно вращается целая галактика"
+			}
+			SpiritSoulfire: {
+				DisplayName: "Духовное пламя"
+				Tooltip: "Призрачное пламя окутывает тело"
+			}
+			CursedSoulfire: {
+				DisplayName: "Проклятое пламя"
+				Tooltip: "Призрачное пламя окутывает тело"
+			}
+			ShadowSoulfire: {
+				DisplayName: "Теневое пламя"
+				Tooltip: "Призрачное пламя окутывает тело"
+			}
+			SolarSoulfire: {
+				DisplayName: "Солнечное пламя"
+				Tooltip: "Призрачное пламя окутывает тело"
+			}
+			DivineRadiance: {
+				DisplayName: "Божественное сияние"
+				Tooltip: "Из-за спины сияют лучи света"
+			}
+			MoonlitRadiance: {
+				DisplayName: "Лунное сияние"
+				Tooltip: "Из-за спины сияют лучи света"
+			}
+			PrismaticRadiance: {
+				DisplayName: "Призматическое сияние"
+				Tooltip: "Из-за спины сияют лучи света"
+			}
+			GreatBear: {
+				DisplayName: "Большая Медведица"
+				Tooltip: "Вокруг вас загорается созвездие"
+			}
+			Hunter: {
+				DisplayName: "Охотник"
+				Tooltip: "Вокруг вас загорается созвездие"
+			}
+			VoidMaw: {
+				DisplayName: "Пасть Пустоты"
+				Tooltip: "Из тёмного дыма что-то наблюдает..."
+			}
+			SakuraStorm: {
+				DisplayName: "Буря сакуры"
+				Tooltip: "Вокруг вас кружатся лепестки и листья"
+			}
+			SpringBreeze: {
+				DisplayName: "Весенний ветер"
+				Tooltip: "Вокруг вас кружатся лепестки и листья"
+			}
+			AutumnGale: {
+				DisplayName: "Осенний листопад"
+				Tooltip: "Вокруг вас кружатся лепестки и листья"
+			}
+			Blizzard: {
+				DisplayName: "Метель"
+				Tooltip: "Вокруг вас кружится снег"
+			}
+			Thunderstorm: {
+				DisplayName: "Гроза"
+				Tooltip: "Вокруг вас трещат молнии"
+			}
+			BloodStorm: {
+				DisplayName: "Кровавая гроза"
+				Tooltip: "Вокруг вас трещат молнии"
+			}
+			DeepSea: {
+				DisplayName: "Морская глубина"
+				Tooltip: "От вас поднимаются пузыри"
+			}
+			Lovestruck: {
+				DisplayName: "Влюблённость"
+				Tooltip: "Вокруг вас взлетают сердечки"
+			}
+			Melody: {
+				DisplayName: "Мелодия"
+				Tooltip: "Вокруг вас танцуют ноты"
+			}
+			NebulaVeil: {
+				DisplayName: "Вуаль туманности"
+				Tooltip: "За спиной клубятся облака туманности"
+			}
+			AuroraVeil: {
+				DisplayName: "Вуаль сияния"
+				Tooltip: "За спиной клубятся облака туманности"
+			}
+			AngelHalo: {
+				DisplayName: "Ангельский нимб"
+				Tooltip: "Над головой парит сияющий нимб"
+			}
+			MoonHalo: {
+				DisplayName: "Лунный нимб"
+				Tooltip: "Над головой парит сияющий нимб"
+			}
+			RoseHalo: {
+				DisplayName: "Розовый нимб"
+				Tooltip: "Над головой парит сияющий нимб"
+			}
+			PrismHalo: {
+				DisplayName: "Радужный нимб"
+				Tooltip: "Над головой парит сияющий нимб"
+			}
+			FallenHalo: {
+				DisplayName: "Нимб падшего"
+				Tooltip: "Тёмный нимб в языках пламени"
+			}
+			VoidHalo: {
+				DisplayName: "Нимб Пустоты"
+				Tooltip: "Тёмный нимб в языках пламени"
+			}
+			SingularityCrown: {
+				DisplayName: "Корона сингулярности"
+				Tooltip: "Над головой вращается маленькая чёрная дыра"
+			}
+			VoidCrown: {
+				DisplayName: "Корона Пустоты"
+				Tooltip: "Над головой вращается маленькая чёрная дыра"
+			}
+			StarCrown: {
+				DisplayName: "Звёздная корона"
+				Tooltip: "Над головой кружится венец из звёзд"
+			}
+			ArcaneHalo: {
+				DisplayName: "Тайный нимб"
+				Tooltip: "Над головой кружат светящиеся руны"
+			}
+			InfernalHalo: {
+				DisplayName: "Адский нимб"
+				Tooltip: "Над головой кружат светящиеся руны"
+			}
+			RingedPlanet: {
+				DisplayName: "Планета с кольцами"
+				Tooltip: "Над вами парит планета с кольцами и лунами"
+			}
+			SpiritFlameCrown: {
+				DisplayName: "Корона духовного огня"
+				Tooltip: "Корона из мерцающего пламени"
+			}
+			SolarFlameCrown: {
+				DisplayName: "Корона солнечного огня"
+				Tooltip: "Корона из мерцающего пламени"
+			}
+			GoldenStars: {
+				DisplayName: "Золотые звёзды"
+				Tooltip: "Вокруг вас вращаются звёзды"
+			}
+			AzureStars: {
+				DisplayName: "Лазурные звёзды"
+				Tooltip: "Вокруг вас вращаются звёзды"
+			}
+			PrismStars: {
+				DisplayName: "Радужные звёзды"
+				Tooltip: "Вокруг вас вращаются звёзды"
+			}
+			AmethystShards: {
+				DisplayName: "Аметистовые осколки"
+				Tooltip: "Вокруг вас вращаются осколки кристаллов"
+			}
+			EmeraldShards: {
+				DisplayName: "Изумрудные осколки"
+				Tooltip: "Вокруг вас вращаются осколки кристаллов"
+			}
+			RubyShards: {
+				DisplayName: "Рубиновые осколки"
+				Tooltip: "Вокруг вас вращаются осколки кристаллов"
+			}
+			SapphireShards: {
+				DisplayName: "Сапфировые осколки"
+				Tooltip: "Вокруг вас вращаются осколки кристаллов"
+			}
+			TinyMoons: {
+				DisplayName: "Маленькие луны"
+				Tooltip: "Вокруг вас вращаются две маленькие луны"
+			}
+			SpiritWisps: {
+				DisplayName: "Блуждающие духи"
+				Tooltip: "Вокруг вас танцуют огоньки"
+			}
+			CursedWisps: {
+				DisplayName: "Проклятые огоньки"
+				Tooltip: "Вокруг вас танцуют огоньки"
+			}
+			SpectralBlades: {
+				DisplayName: "Призрачные клинки"
+				Tooltip: "Вокруг вас кружит кольцо клинков"
+			}
+			ShadowBlades: {
+				DisplayName: "Теневые клинки"
+				Tooltip: "Вокруг вас кружит кольцо клинков"
+			}
+			Atom: {
+				DisplayName: "Атом"
+				Tooltip: "Вокруг вас вращаются электроны"
+			}
+			Butterflies: {
+				DisplayName: "Бабочки"
+				Tooltip: "Вокруг вас порхают бабочки"
+			}
+			MorphoButterflies: {
+				DisplayName: "Бабочки-морфо"
+				Tooltip: "Вокруг вас порхают бабочки"
+			}
+			Stardust: {
+				DisplayName: "Звёздная пыль"
+				Tooltip: "При движении оставляет мерцающую звёздную пыль"
+			}
+			AzureStardust: {
+				DisplayName: "Лазурная пыль"
+				Tooltip: "При движении оставляет мерцающую звёздную пыль"
+			}
+			RoseStardust: {
+				DisplayName: "Розовая пыль"
+				Tooltip: "При движении оставляет мерцающую звёздную пыль"
+			}
+			RainbowRibbon: {
+				DisplayName: "Радужная лента"
+				Tooltip: "За вами тянется лента света"
+			}
+			NebulaRibbon: {
+				DisplayName: "Лента туманности"
+				Tooltip: "За вами тянется лента света"
+			}
+			SolarFlameTrail: {
+				DisplayName: "Солнечный огненный след"
+				Tooltip: "При движении оставляет огненный след"
+			}
+			CursedFlameTrail: {
+				DisplayName: "Проклятый огненный след"
+				Tooltip: "При движении оставляет огненный след"
+			}
+			SpiritFlameTrail: {
+				DisplayName: "Духовный огненный след"
+				Tooltip: "При движении оставляет огненный след"
+			}
+			VoidTrail: {
+				DisplayName: "След Пустоты"
+				Tooltip: "При движении оставляет тёмный дым"
+			}
+			SakuraTrail: {
+				DisplayName: "След сакуры"
+				Tooltip: "При движении за вами осыпаются лепестки"
+			}
+			AutumnTrail: {
+				DisplayName: "Осенний след"
+				Tooltip: "При движении за вами осыпаются лепестки"
+			}
+			LightningTrail: {
+				DisplayName: "Грозовой след"
+				Tooltip: "Там, где вы прошли, бьют молнии"
+			}
+			FrostTrail: {
+				DisplayName: "Морозный след"
+				Tooltip: "За вами падают снежинки и лёд"
+			}
+			BubbleTrail: {
+				DisplayName: "След пузырей"
+				Tooltip: "При движении оставляет пузыри"
+			}
+			PhantomAfterimage: {
+				DisplayName: "Фантомный шлейф"
+				Tooltip: "За вами следуют светящиеся копии"
+			}
+			ShadowAfterimage: {
+				DisplayName: "Теневой шлейф"
+				Tooltip: "За вами следуют светящиеся копии"
+			}
+			PrismAfterimage: {
+				DisplayName: "Радужный шлейф"
+				Tooltip: "За вами следуют светящиеся копии"
+			}
+			SeraphWings: {
+				DisplayName: "Крылья серафима"
+				Tooltip: "Огромные крылья из света"
+			}
+			AzureSeraphWings: {
+				DisplayName: "Лазурные крылья серафима"
+				Tooltip: "Огромные крылья из света"
+			}
+			RoseSeraphWings: {
+				DisplayName: "Розовые крылья серафима"
+				Tooltip: "Огромные крылья из света"
+			}
+			VoidTendrils: {
+				DisplayName: "Щупальца Пустоты"
+				Tooltip: "Извивающиеся щупальца Пустоты"
+			}
+			AbyssTendrils: {
+				DisplayName: "Щупальца бездны"
+				Tooltip: "Извивающиеся щупальца Пустоты"
+			}
+			PrismaticWings: {
+				DisplayName: "Призматические крылья"
+				Tooltip: "Мерцающие кристальные крылья"
+			}
+			AmethystWings: {
+				DisplayName: "Аметистовые крылья"
+				Tooltip: "Мерцающие кристальные крылья"
+			}
+			PhoenixWings: {
+				DisplayName: "Крылья феникса"
+				Tooltip: "Крылья живого огня"
+			}
+			SpiritFlameWings: {
+				DisplayName: "Крылья духовного огня"
+				Tooltip: "Крылья живого огня"
+			}
+			ConstellationWings: {
+				DisplayName: "Крылья созвездий"
+				Tooltip: "Крылья, начерченные звёздами"
+			}
+			ArcaneCircle: {
+				DisplayName: "Тайный круг"
+				Tooltip: "Под ногами светится магический круг"
+			}
+			InfernalCircle: {
+				DisplayName: "Адский круг"
+				Tooltip: "Под ногами светится магический круг"
+			}
+			HolyCircle: {
+				DisplayName: "Святой круг"
+				Tooltip: "Под ногами светится магический круг"
+			}
+			FlowerSteps: {
+				DisplayName: "Цветочные шаги"
+				Tooltip: "Там, где вы ступаете, что-то вырастает"
+			}
+			SakuraSteps: {
+				DisplayName: "Шаги сакуры"
+				Tooltip: "Там, где вы ступаете, что-то вырастает"
+			}
+			FrostSteps: {
+				DisplayName: "Ледяные шаги"
+				Tooltip: "Там, где вы ступаете, что-то вырастает"
+			}
+			ShadowPool: {
+				DisplayName: "Теневая лужа"
+				Tooltip: "Под ногами растекается тень"
+			}
+			Sunbeam: {
+				DisplayName: "Солнечный луч"
+				Tooltip: "Из земли поднимается столб мягкого света"
+			}
+			VoidSovereignHead: {
+				DisplayName: "Шлем Повелителя Пустоты"
+				Tooltip: "Часть комплекта «Повелитель Пустоты»"
+			}
+			VoidSovereignBody: {
+				DisplayName: "Доспех Повелителя Пустоты"
+				Tooltip: "Часть комплекта «Повелитель Пустоты»"
+			}
+			VoidSovereignLegs: {
+				DisplayName: "Поножи Повелителя Пустоты"
+				Tooltip: "Часть комплекта «Повелитель Пустоты»"
+			}
+			CelestialSeraphHead: {
+				DisplayName: "Венец небесного серафима"
+				Tooltip: "Часть комплекта «Небесный серафим»"
+			}
+			CelestialSeraphBody: {
+				DisplayName: "Доспех небесного серафима"
+				Tooltip: "Часть комплекта «Небесный серафим»"
+			}
+			CelestialSeraphLegs: {
+				DisplayName: "Поножи небесного серафима"
+				Tooltip: "Часть комплекта «Небесный серафим»"
+			}
+			AstralVoyagerHead: {
+				DisplayName: "Капюшон звёздного странника"
+				Tooltip: "Часть комплекта «Звёздный странник»"
+			}
+			AstralVoyagerBody: {
+				DisplayName: "Мантия звёздного странника"
+				Tooltip: "Часть комплекта «Звёздный странник»"
+			}
+			InfernalWarlordHead: {
+				DisplayName: "Шлем адского полководца"
+				Tooltip: "Часть комплекта «Адский полководец»"
+			}
+			InfernalWarlordBody: {
+				DisplayName: "Доспех адского полководца"
+				Tooltip: "Часть комплекта «Адский полководец»"
+			}
+			InfernalWarlordLegs: {
+				DisplayName: "Поножи адского полководца"
+				Tooltip: "Часть комплекта «Адский полководец»"
+			}
+			FrostMonarchHead: {
+				DisplayName: "Венец ледяного монарха"
+				Tooltip: "Часть комплекта «Ледяной монарх»"
+			}
+			FrostMonarchBody: {
+				DisplayName: "Доспех ледяного монарха"
+				Tooltip: "Часть комплекта «Ледяной монарх»"
+			}
+			FrostMonarchLegs: {
+				DisplayName: "Поножи ледяного монарха"
+				Tooltip: "Часть комплекта «Ледяной монарх»"
+			}
+			SakuraRoninHead: {
+				DisplayName: "Шляпа ронина сакуры"
+				Tooltip: "Часть комплекта «Ронин сакуры»"
+			}
+			SakuraRoninBody: {
+				DisplayName: "Мантия ронина сакуры"
+				Tooltip: "Часть комплекта «Ронин сакуры»"
+			}
+			NeonPhantomHead: {
+				DisplayName: "Шлем неонового фантома"
+				Tooltip: "Часть комплекта «Неоновый фантом»"
+			}
+			NeonPhantomBody: {
+				DisplayName: "Доспех неонового фантома"
+				Tooltip: "Часть комплекта «Неоновый фантом»"
+			}
+			NeonPhantomLegs: {
+				DisplayName: "Поножи неонового фантома"
+				Tooltip: "Часть комплекта «Неоновый фантом»"
+			}
+			VerdantDruidHead: {
+				DisplayName: "Венец зелёного друида"
+				Tooltip: "Часть комплекта «Зелёный друид»"
+			}
+			VerdantDruidBody: {
+				DisplayName: "Мантия зелёного друида"
+				Tooltip: "Часть комплекта «Зелёный друид»"
+			}
+			AbyssalTideHead: {
+				DisplayName: "Шлем прилива бездны"
+				Tooltip: "Часть комплекта «Прилив бездны»"
+			}
+			AbyssalTideBody: {
+				DisplayName: "Доспех прилива бездны"
+				Tooltip: "Часть комплекта «Прилив бездны»"
+			}
+			AbyssalTideLegs: {
+				DisplayName: "Поножи прилива бездны"
+				Tooltip: "Часть комплекта «Прилив бездны»"
+			}
+			PrismaticParagonHead: {
+				DisplayName: "Шлем призматического идеала"
+				Tooltip: "Часть комплекта «Призматический идеал»"
+			}
+			PrismaticParagonBody: {
+				DisplayName: "Доспех призматического идеала"
+				Tooltip: "Часть комплекта «Призматический идеал»"
+			}
+			PrismaticParagonLegs: {
+				DisplayName: "Поножи призматического идеала"
+				Tooltip: "Часть комплекта «Призматический идеал»"
+			}
+		}
+		Sets: {
+			VoidSovereign: "Повелитель Пустоты"
+			CelestialSeraph: "Небесный серафим"
+			AstralVoyager: "Звёздный странник"
+			InfernalWarlord: "Адский полководец"
+			FrostMonarch: "Ледяной монарх"
+			SakuraRonin: "Ронин сакуры"
+			NeonPhantom: "Неоновый фантом"
+			VerdantDruid: "Зелёный друид"
+			AbyssalTide: "Прилив бездны"
+			PrismaticParagon: "Призматический идеал"
+		}
+		Slots: {
+			Head: "Голова"
+			Body: "Тело"
+			Legs: "Ноги"
+			Wings: "Крылья"
+			Back: "Спина / плащ"
+			Face: "Лицо"
+			Neck: "Шея"
+			Hands: "Руки"
+			Waist: "Пояс"
+			Shoes: "Обувь"
+			Shield: "Щит"
+			Balloon: "Шарик"
+			Aura: "Аура"
+			Halo: "Нимб"
+			Orbit: "Орбита"
+			Trail: "След"
+			Ground: "Под ногами"
+		}
+		Tooltips: {
+			Slot: "Слот гардероба: {0}"
+			Cosmetic: "Только для красоты: без характеристик, света и преимуществ"
+		}
+		UI: {
+			Title: "Гардероб TerraSkins"
+			Close: "Закрыть"
+			OpenWardrobe: "Открыть гардероб TerraSkins"
+			WardrobeOn: "Гардероб: ВКЛ"
+			WardrobeOff: "Гардероб: ВЫКЛ"
+			WardrobeToggleTooltip: "Быстро показать настоящую экипировку, не теряя образ"
+			Randomize: "Случайный образ"
+			RandomizeTooltip: "Собирает случайный образ"
+			ClearAll: "Очистить всё"
+			ClearAllTooltip: "Снимает все замены, снова видна ваша экипировка"
+			Outfits: "Образы"
+			SearchHint: "Поиск..."
+			AllSources: "Все"
+			Dye: "Краситель"
+			BackToLooks: "Назад"
+			DyeTooltip: "Выбрать краситель для облика в этом слоте"
+			DyeModeHint: "Выбор красителя: {0}"
+			ResetSlot: "Сбросить слот"
+			ResetSlotTooltip: "Показывать в этом слоте вашу экипировку"
+			KeepOwn: "своя экипировка"
+			KeepOwnTooltip: "Своя экипировка\nГардероб не меняет этот слот"
+			Hidden: "скрыто"
+			HideTooltip: "Скрыто\nВ этом слоте ничего не видно, даже если вы что-то носите"
+			NoDyeTooltip: "Без красителя"
+			PreviewHint: "Левый клик: идти / стоять\nПравый клик: развернуть"
+			SaveOutfit: "Сохранить текущий образ"
+			SaveOutfitHint: "сначала можно ввести имя в поиске"
+			SaveOutfitTooltip: "Сохраняет текущий образ\nСовет: текст из поля поиска станет его названием"
+			PresetOutfit: "Образ TerraSkins"
+			SavedOutfit: "ваш образ"
+			PresetTooltip: "{0}\nЛевый клик: надеть весь образ"
+			SavedTooltip: "{0}\nЛевый клик: надеть\nПравый клик: удалить"
+			DefaultOutfitName: "Образ {0}"
+		}
+		Keybinds: {
+			OpenWardrobe: {
+				DisplayName: "Открыть гардероб"
+			}
+		}
+		BuilderToggles: {
+			WardrobeBuilderToggle: {
+				DisplayName: "Открыть гардероб TerraSkins"
+			}
+		}
+		Configs: {
+			TerraSkinsClientConfig: {
+				DisplayName: "TerraSkins"
+				Headers: {
+					Effects: "Эффекты"
+					Interface: "Интерфейс"
+				}
+				ShowOwnEffects: {
+					Label: "Показывать мои эффекты"
+					Tooltip: "Рисовать ваши ауры, нимбы, следы и другие эффекты"
+				}
+				ShowOtherPlayersEffects: {
+					Label: "Показывать эффекты других игроков"
+					Tooltip: "Выключите, если эффекты других игроков отвлекают"
+				}
+				EffectOpacity: {
+					Label: "Непрозрачность эффектов"
+					Tooltip: "Насколько заметны косметические эффекты"
+				}
+				ShowWardrobeButton: {
+					Label: "Показывать кнопку гардероба"
+					Tooltip: "Кнопка-вешалка среди переключателей строителя в инвентаре"
+				}
+				ShowPreviewEffects: {
+					Label: "Эффекты в предпросмотре гардероба"
+					Tooltip: "Рисовать эффекты на персонаже в окне гардероба"
+				}
+			}
+		}
+	}
+}

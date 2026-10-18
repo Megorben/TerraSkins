@@ -1,0 +1,591 @@
+Mods: {
+	TerraSkins: {
+		Items: {
+			EventHorizon: {
+				DisplayName: "Event Horizon"
+				Tooltip: "A black hole devours the light behind you"
+			}
+			VioletSingularity: {
+				DisplayName: "Violet Singularity"
+				Tooltip: "A black hole devours the light behind you"
+			}
+			AzureAbyss: {
+				DisplayName: "Azure Abyss"
+				Tooltip: "A black hole devours the light behind you"
+			}
+			Quasar: {
+				DisplayName: "Quasar"
+				Tooltip: "A black hole devours the light behind you"
+			}
+			MilkyWay: {
+				DisplayName: "Milky Way"
+				Tooltip: "A whole galaxy turns slowly behind you"
+			}
+			NebulaGalaxy: {
+				DisplayName: "Nebula Galaxy"
+				Tooltip: "A whole galaxy turns slowly behind you"
+			}
+			EmeraldGalaxy: {
+				DisplayName: "Emerald Galaxy"
+				Tooltip: "A whole galaxy turns slowly behind you"
+			}
+			SpiritSoulfire: {
+				DisplayName: "Spirit Soulfire"
+				Tooltip: "Ghostly flames lick up your body"
+			}
+			CursedSoulfire: {
+				DisplayName: "Cursed Soulfire"
+				Tooltip: "Ghostly flames lick up your body"
+			}
+			ShadowSoulfire: {
+				DisplayName: "Shadow Soulfire"
+				Tooltip: "Ghostly flames lick up your body"
+			}
+			SolarSoulfire: {
+				DisplayName: "Solar Soulfire"
+				Tooltip: "Ghostly flames lick up your body"
+			}
+			DivineRadiance: {
+				DisplayName: "Divine Radiance"
+				Tooltip: "Radiant rays shine from behind you"
+			}
+			MoonlitRadiance: {
+				DisplayName: "Moonlit Radiance"
+				Tooltip: "Radiant rays shine from behind you"
+			}
+			PrismaticRadiance: {
+				DisplayName: "Prismatic Radiance"
+				Tooltip: "Radiant rays shine from behind you"
+			}
+			GreatBear: {
+				DisplayName: "Great Bear"
+				Tooltip: "A constellation lights up around you"
+			}
+			Hunter: {
+				DisplayName: "The Hunter"
+				Tooltip: "A constellation lights up around you"
+			}
+			VoidMaw: {
+				DisplayName: "Void Maw"
+				Tooltip: "Something watches from the dark smoke..."
+			}
+			SakuraStorm: {
+				DisplayName: "Sakura Storm"
+				Tooltip: "Petals and leaves swirl around you"
+			}
+			SpringBreeze: {
+				DisplayName: "Spring Breeze"
+				Tooltip: "Petals and leaves swirl around you"
+			}
+			AutumnGale: {
+				DisplayName: "Autumn Gale"
+				Tooltip: "Petals and leaves swirl around you"
+			}
+			Blizzard: {
+				DisplayName: "Blizzard"
+				Tooltip: "Snow swirls around you"
+			}
+			Thunderstorm: {
+				DisplayName: "Thunderstorm"
+				Tooltip: "Lightning crackles around you"
+			}
+			BloodStorm: {
+				DisplayName: "Blood Storm"
+				Tooltip: "Lightning crackles around you"
+			}
+			DeepSea: {
+				DisplayName: "Deep Sea"
+				Tooltip: "Bubbles drift up from you"
+			}
+			Lovestruck: {
+				DisplayName: "Lovestruck"
+				Tooltip: "Hearts float up around you"
+			}
+			Melody: {
+				DisplayName: "Melody"
+				Tooltip: "Music notes dance around you"
+			}
+			NebulaVeil: {
+				DisplayName: "Nebula Veil"
+				Tooltip: "Soft nebula clouds churn behind you"
+			}
+			AuroraVeil: {
+				DisplayName: "Aurora Veil"
+				Tooltip: "Soft nebula clouds churn behind you"
+			}
+			AngelHalo: {
+				DisplayName: "Angel Halo"
+				Tooltip: "A shining halo floats above your head"
+			}
+			MoonHalo: {
+				DisplayName: "Moon Halo"
+				Tooltip: "A shining halo floats above your head"
+			}
+			RoseHalo: {
+				DisplayName: "Rose Halo"
+				Tooltip: "A shining halo floats above your head"
+			}
+			PrismHalo: {
+				DisplayName: "Prism Halo"
+				Tooltip: "A shining halo floats above your head"
+			}
+			FallenHalo: {
+				DisplayName: "Fallen Halo"
+				Tooltip: "A dark halo wreathed in flames"
+			}
+			VoidHalo: {
+				DisplayName: "Void Halo"
+				Tooltip: "A dark halo wreathed in flames"
+			}
+			SingularityCrown: {
+				DisplayName: "Singularity Crown"
+				Tooltip: "A tiny black hole spins above your head"
+			}
+			VoidCrown: {
+				DisplayName: "Void Crown"
+				Tooltip: "A tiny black hole spins above your head"
+			}
+			StarCrown: {
+				DisplayName: "Star Crown"
+				Tooltip: "A circlet of stars turns above your head"
+			}
+			ArcaneHalo: {
+				DisplayName: "Arcane Halo"
+				Tooltip: "Glowing runes circle above your head"
+			}
+			InfernalHalo: {
+				DisplayName: "Infernal Halo"
+				Tooltip: "Glowing runes circle above your head"
+			}
+			RingedPlanet: {
+				DisplayName: "Ringed Planet"
+				Tooltip: "A ringed planet with its moons hovers above you"
+			}
+			SpiritFlameCrown: {
+				DisplayName: "Spirit Flame Crown"
+				Tooltip: "A crown of flickering flames"
+			}
+			SolarFlameCrown: {
+				DisplayName: "Solar Flame Crown"
+				Tooltip: "A crown of flickering flames"
+			}
+			GoldenStars: {
+				DisplayName: "Golden Stars"
+				Tooltip: "Stars orbit around you"
+			}
+			AzureStars: {
+				DisplayName: "Azure Stars"
+				Tooltip: "Stars orbit around you"
+			}
+			PrismStars: {
+				DisplayName: "Prism Stars"
+				Tooltip: "Stars orbit around you"
+			}
+			AmethystShards: {
+				DisplayName: "Amethyst Shards"
+				Tooltip: "Crystal shards orbit around you"
+			}
+			EmeraldShards: {
+				DisplayName: "Emerald Shards"
+				Tooltip: "Crystal shards orbit around you"
+			}
+			RubyShards: {
+				DisplayName: "Ruby Shards"
+				Tooltip: "Crystal shards orbit around you"
+			}
+			SapphireShards: {
+				DisplayName: "Sapphire Shards"
+				Tooltip: "Crystal shards orbit around you"
+			}
+			TinyMoons: {
+				DisplayName: "Tiny Moons"
+				Tooltip: "Two little moons orbit around you"
+			}
+			SpiritWisps: {
+				DisplayName: "Spirit Wisps"
+				Tooltip: "Wisps dance around you"
+			}
+			CursedWisps: {
+				DisplayName: "Cursed Wisps"
+				Tooltip: "Wisps dance around you"
+			}
+			SpectralBlades: {
+				DisplayName: "Spectral Blades"
+				Tooltip: "A ring of spectral blades circles you"
+			}
+			ShadowBlades: {
+				DisplayName: "Shadow Blades"
+				Tooltip: "A ring of spectral blades circles you"
+			}
+			Atom: {
+				DisplayName: "Atom"
+				Tooltip: "Electrons orbit around you"
+			}
+			Butterflies: {
+				DisplayName: "Butterflies"
+				Tooltip: "Butterflies flutter around you"
+			}
+			MorphoButterflies: {
+				DisplayName: "Morpho Butterflies"
+				Tooltip: "Butterflies flutter around you"
+			}
+			Stardust: {
+				DisplayName: "Stardust"
+				Tooltip: "Leaves twinkling stardust as you move"
+			}
+			AzureStardust: {
+				DisplayName: "Azure Stardust"
+				Tooltip: "Leaves twinkling stardust as you move"
+			}
+			RoseStardust: {
+				DisplayName: "Rose Stardust"
+				Tooltip: "Leaves twinkling stardust as you move"
+			}
+			RainbowRibbon: {
+				DisplayName: "Rainbow Ribbon"
+				Tooltip: "A ribbon of light follows you"
+			}
+			NebulaRibbon: {
+				DisplayName: "Nebula Ribbon"
+				Tooltip: "A ribbon of light follows you"
+			}
+			SolarFlameTrail: {
+				DisplayName: "Solar Flame Trail"
+				Tooltip: "Leaves a trail of flames as you move"
+			}
+			CursedFlameTrail: {
+				DisplayName: "Cursed Flame Trail"
+				Tooltip: "Leaves a trail of flames as you move"
+			}
+			SpiritFlameTrail: {
+				DisplayName: "Spirit Flame Trail"
+				Tooltip: "Leaves a trail of flames as you move"
+			}
+			VoidTrail: {
+				DisplayName: "Void Trail"
+				Tooltip: "Leaves dark smoke as you move"
+			}
+			SakuraTrail: {
+				DisplayName: "Sakura Trail"
+				Tooltip: "Petals fall behind you as you move"
+			}
+			AutumnTrail: {
+				DisplayName: "Autumn Trail"
+				Tooltip: "Petals fall behind you as you move"
+			}
+			LightningTrail: {
+				DisplayName: "Lightning Trail"
+				Tooltip: "Lightning arcs where you passed"
+			}
+			FrostTrail: {
+				DisplayName: "Frost Trail"
+				Tooltip: "Snowflakes and ice fall behind you"
+			}
+			BubbleTrail: {
+				DisplayName: "Bubble Trail"
+				Tooltip: "Leaves bubbles as you move"
+			}
+			PhantomAfterimage: {
+				DisplayName: "Phantom Afterimage"
+				Tooltip: "Glowing copies of you follow your movement"
+			}
+			ShadowAfterimage: {
+				DisplayName: "Shadow Afterimage"
+				Tooltip: "Glowing copies of you follow your movement"
+			}
+			PrismAfterimage: {
+				DisplayName: "Prism Afterimage"
+				Tooltip: "Glowing copies of you follow your movement"
+			}
+			SeraphWings: {
+				DisplayName: "Seraph Wings"
+				Tooltip: "Great wings of light"
+			}
+			AzureSeraphWings: {
+				DisplayName: "Azure Seraph Wings"
+				Tooltip: "Great wings of light"
+			}
+			RoseSeraphWings: {
+				DisplayName: "Rose Seraph Wings"
+				Tooltip: "Great wings of light"
+			}
+			VoidTendrils: {
+				DisplayName: "Void Tendrils"
+				Tooltip: "Writhing tendrils of the void"
+			}
+			AbyssTendrils: {
+				DisplayName: "Abyss Tendrils"
+				Tooltip: "Writhing tendrils of the void"
+			}
+			PrismaticWings: {
+				DisplayName: "Prismatic Wings"
+				Tooltip: "Shimmering crystal wings"
+			}
+			AmethystWings: {
+				DisplayName: "Amethyst Wings"
+				Tooltip: "Shimmering crystal wings"
+			}
+			PhoenixWings: {
+				DisplayName: "Phoenix Wings"
+				Tooltip: "Wings of living fire"
+			}
+			SpiritFlameWings: {
+				DisplayName: "Spirit Flame Wings"
+				Tooltip: "Wings of living fire"
+			}
+			ConstellationWings: {
+				DisplayName: "Constellation Wings"
+				Tooltip: "Wings traced by stars"
+			}
+			ArcaneCircle: {
+				DisplayName: "Arcane Circle"
+				Tooltip: "A magic circle glows under your feet"
+			}
+			InfernalCircle: {
+				DisplayName: "Infernal Circle"
+				Tooltip: "A magic circle glows under your feet"
+			}
+			HolyCircle: {
+				DisplayName: "Holy Circle"
+				Tooltip: "A magic circle glows under your feet"
+			}
+			FlowerSteps: {
+				DisplayName: "Flower Steps"
+				Tooltip: "Things grow where you step"
+			}
+			SakuraSteps: {
+				DisplayName: "Sakura Steps"
+				Tooltip: "Things grow where you step"
+			}
+			FrostSteps: {
+				DisplayName: "Frost Steps"
+				Tooltip: "Things grow where you step"
+			}
+			ShadowPool: {
+				DisplayName: "Shadow Pool"
+				Tooltip: "A pool of shadow follows your feet"
+			}
+			Sunbeam: {
+				DisplayName: "Sunbeam"
+				Tooltip: "A pillar of soft light rises from the ground"
+			}
+			VoidSovereignHead: {
+				DisplayName: "Void Sovereign Helm"
+				Tooltip: "Part of the Void Sovereign set"
+			}
+			VoidSovereignBody: {
+				DisplayName: "Void Sovereign Armor"
+				Tooltip: "Part of the Void Sovereign set"
+			}
+			VoidSovereignLegs: {
+				DisplayName: "Void Sovereign Greaves"
+				Tooltip: "Part of the Void Sovereign set"
+			}
+			CelestialSeraphHead: {
+				DisplayName: "Celestial Seraph Circlet"
+				Tooltip: "Part of the Celestial Seraph set"
+			}
+			CelestialSeraphBody: {
+				DisplayName: "Celestial Seraph Armor"
+				Tooltip: "Part of the Celestial Seraph set"
+			}
+			CelestialSeraphLegs: {
+				DisplayName: "Celestial Seraph Greaves"
+				Tooltip: "Part of the Celestial Seraph set"
+			}
+			AstralVoyagerHead: {
+				DisplayName: "Astral Voyager Hood"
+				Tooltip: "Part of the Astral Voyager set"
+			}
+			AstralVoyagerBody: {
+				DisplayName: "Astral Voyager Robe"
+				Tooltip: "Part of the Astral Voyager set"
+			}
+			InfernalWarlordHead: {
+				DisplayName: "Infernal Warlord Helm"
+				Tooltip: "Part of the Infernal Warlord set"
+			}
+			InfernalWarlordBody: {
+				DisplayName: "Infernal Warlord Armor"
+				Tooltip: "Part of the Infernal Warlord set"
+			}
+			InfernalWarlordLegs: {
+				DisplayName: "Infernal Warlord Greaves"
+				Tooltip: "Part of the Infernal Warlord set"
+			}
+			FrostMonarchHead: {
+				DisplayName: "Frost Monarch Circlet"
+				Tooltip: "Part of the Frost Monarch set"
+			}
+			FrostMonarchBody: {
+				DisplayName: "Frost Monarch Armor"
+				Tooltip: "Part of the Frost Monarch set"
+			}
+			FrostMonarchLegs: {
+				DisplayName: "Frost Monarch Greaves"
+				Tooltip: "Part of the Frost Monarch set"
+			}
+			SakuraRoninHead: {
+				DisplayName: "Sakura Ronin Hat"
+				Tooltip: "Part of the Sakura Ronin set"
+			}
+			SakuraRoninBody: {
+				DisplayName: "Sakura Ronin Robe"
+				Tooltip: "Part of the Sakura Ronin set"
+			}
+			NeonPhantomHead: {
+				DisplayName: "Neon Phantom Helm"
+				Tooltip: "Part of the Neon Phantom set"
+			}
+			NeonPhantomBody: {
+				DisplayName: "Neon Phantom Armor"
+				Tooltip: "Part of the Neon Phantom set"
+			}
+			NeonPhantomLegs: {
+				DisplayName: "Neon Phantom Greaves"
+				Tooltip: "Part of the Neon Phantom set"
+			}
+			VerdantDruidHead: {
+				DisplayName: "Verdant Druid Circlet"
+				Tooltip: "Part of the Verdant Druid set"
+			}
+			VerdantDruidBody: {
+				DisplayName: "Verdant Druid Robe"
+				Tooltip: "Part of the Verdant Druid set"
+			}
+			AbyssalTideHead: {
+				DisplayName: "Abyssal Tide Helm"
+				Tooltip: "Part of the Abyssal Tide set"
+			}
+			AbyssalTideBody: {
+				DisplayName: "Abyssal Tide Armor"
+				Tooltip: "Part of the Abyssal Tide set"
+			}
+			AbyssalTideLegs: {
+				DisplayName: "Abyssal Tide Greaves"
+				Tooltip: "Part of the Abyssal Tide set"
+			}
+			PrismaticParagonHead: {
+				DisplayName: "Prismatic Paragon Helm"
+				Tooltip: "Part of the Prismatic Paragon set"
+			}
+			PrismaticParagonBody: {
+				DisplayName: "Prismatic Paragon Armor"
+				Tooltip: "Part of the Prismatic Paragon set"
+			}
+			PrismaticParagonLegs: {
+				DisplayName: "Prismatic Paragon Greaves"
+				Tooltip: "Part of the Prismatic Paragon set"
+			}
+		}
+		Sets: {
+			VoidSovereign: "Void Sovereign"
+			CelestialSeraph: "Celestial Seraph"
+			AstralVoyager: "Astral Voyager"
+			InfernalWarlord: "Infernal Warlord"
+			FrostMonarch: "Frost Monarch"
+			SakuraRonin: "Sakura Ronin"
+			NeonPhantom: "Neon Phantom"
+			VerdantDruid: "Verdant Druid"
+			AbyssalTide: "Abyssal Tide"
+			PrismaticParagon: "Prismatic Paragon"
+		}
+		Slots: {
+			Head: "Head"
+			Body: "Body"
+			Legs: "Legs"
+			Wings: "Wings"
+			Back: "Back / cape"
+			Face: "Face"
+			Neck: "Neck"
+			Hands: "Hands"
+			Waist: "Waist"
+			Shoes: "Shoes"
+			Shield: "Shield"
+			Balloon: "Balloon"
+			Aura: "Aura"
+			Halo: "Halo"
+			Orbit: "Orbit"
+			Trail: "Trail"
+			Ground: "Ground"
+		}
+		Tooltips: {
+			Slot: "Wardrobe slot: {0}"
+			Cosmetic: "Purely cosmetic: no stats, no light, no advantage"
+		}
+		UI: {
+			Title: "TerraSkins Wardrobe"
+			Close: "Close"
+			OpenWardrobe: "Open the TerraSkins wardrobe"
+			WardrobeOn: "Wardrobe: ON"
+			WardrobeOff: "Wardrobe: OFF"
+			WardrobeToggleTooltip: "Quickly show your real equipment without losing your look"
+			Randomize: "Surprise me!"
+			RandomizeTooltip: "Puts together a random look"
+			ClearAll: "Clear everything"
+			ClearAllTooltip: "Removes every override, your own equipment shows again"
+			Outfits: "Outfits"
+			SearchHint: "Search..."
+			AllSources: "All"
+			Dye: "Dye"
+			BackToLooks: "Back"
+			DyeTooltip: "Pick a dye for the appearance in this slot"
+			DyeModeHint: "Choosing a dye: {0}"
+			ResetSlot: "Reset slot"
+			ResetSlotTooltip: "Show your own equipment in this slot"
+			KeepOwn: "your own equipment"
+			KeepOwnTooltip: "Your own equipment\nThe wardrobe does not change this slot"
+			Hidden: "hidden"
+			HideTooltip: "Hidden\nNothing is shown in this slot, even if you wear something"
+			NoDyeTooltip: "No dye"
+			PreviewHint: "Left click: walk / stand\nRight click: turn around"
+			SaveOutfit: "Save current look"
+			SaveOutfitHint: "type a name in the search box first"
+			SaveOutfitTooltip: "Saves your current look as an outfit\nTip: the text in the search box becomes its name"
+			PresetOutfit: "TerraSkins outfit"
+			SavedOutfit: "your outfit"
+			PresetTooltip: "{0}\nLeft click: wear the whole outfit"
+			SavedTooltip: "{0}\nLeft click: wear\nRight click: delete"
+			DefaultOutfitName: "Look {0}"
+		}
+		Keybinds: {
+			OpenWardrobe: {
+				DisplayName: "Open wardrobe"
+			}
+		}
+		BuilderToggles: {
+			WardrobeBuilderToggle: {
+				DisplayName: "Open the TerraSkins wardrobe"
+			}
+		}
+		Configs: {
+			TerraSkinsClientConfig: {
+				DisplayName: "TerraSkins"
+				Headers: {
+					Effects: "Effects"
+					Interface: "Interface"
+				}
+				ShowOwnEffects: {
+					Label: "Show my effects"
+					Tooltip: "Draw your own auras, halos, trails and other effects"
+				}
+				ShowOtherPlayersEffects: {
+					Label: "Show other players' effects"
+					Tooltip: "Turn off if effects of other players distract you"
+				}
+				EffectOpacity: {
+					Label: "Effect opacity"
+					Tooltip: "How visible cosmetic effects are"
+				}
+				ShowWardrobeButton: {
+					Label: "Show the wardrobe button"
+					Tooltip: "The hanger button among the builder toggles in the inventory"
+				}
+				ShowPreviewEffects: {
+					Label: "Effects in the wardrobe preview"
+					Tooltip: "Draw effects on the character preview of the wardrobe"
+				}
+			}
+		}
+	}
+}
