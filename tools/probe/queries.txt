@@ -1,0 +1,20 @@
+Terraria.Player::SetMatch
+Terraria.Player::PlayerFrame::wearsRobe|SetMatch|FrameEffects|VisibleAccessor|UpdateDyes|ResetVisible|head =|legs =|body =
+Terraria.Player::ResetVisibleAccessories
+Terraria.Player::UpdateMiscCounter
+Terraria.Player::SerializedClone
+Terraria.Player::SetArmorEffectVisuals::armorEffect|ArmorSetShadows
+Terraria.Main::HandleIME
+Terraria.Main::GetInputText
+Terraria.Main::inputTextEscape
+Terraria.Main::Camera
+Terraria.Main::CurrentPlayerOverride
+Terraria.GameContent.UI.Elements.UICharacter
+Terraria.GameContent.UI.Elements.UICharacter::Update
+Terraria.GameContent.UI.Elements.UICharacter::DrawSelf
+Terraria.GameContent.UI.Elements.UICharacter::UpdateAnim
+Terraria.UI.ItemSlot::DrawItemIcon
+Terraria.GameInput.PlayerInput::LockVanillaMouseScroll
+Terraria.Utils::DrawInvBG
+Terraria.DataStructures.PlayerDrawSet
+Terraria.Graphics.Renderers.LegacyPlayerRenderer::DrawPlayerFull::SetArmorEffectVisuals|DrawPlayer\(|armorEffect
