@@ -64,7 +64,12 @@ for line in open(queries):
     found = False
     for body in blocks(text, parts[1]):
         found = True
-        if len(parts) == 3:
+        if len(parts) == 3 and parts[2].startswith("@"):
+            a, b = (int(x) for x in parts[2][1:].split("-"))
+            for n, l in enumerate(body.splitlines()[a:b], start=a):
+                print(f"{n:5}: {l.rstrip()}")
+            print("-----")
+        elif len(parts) == 3:
             for n, l in enumerate(body.splitlines()):
                 if re.search(parts[2], l):
                     print(f"{n:5}: {l.rstrip()}")
