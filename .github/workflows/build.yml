@@ -77,6 +77,8 @@ jobs:
           if grep -qiE "TerraSkins.*(exception|error)|(exception|error).*TerraSkins" "$LOG"; then
             echo "TerraSkins failed to load"; exit 1
           fi
+          grep -q "TerraSkins" "$LOG" || { echo "TerraSkins was not loaded"; exit 1; }
+          grep -m5 "TerraSkins" "$LOG"
           grep -qiE "Server started|listening on port" "$OUT"
 
       - name: Upload .tmod
