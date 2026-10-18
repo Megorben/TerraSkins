@@ -30,6 +30,11 @@ jobs:
         run: |
           curl -fsSL -o tModLoader.zip "https://github.com/tModLoader/tModLoader/releases/download/${TML_VERSION}/tModLoader.zip"
           unzip -q tModLoader.zip -d tModLoader
+          # Packaging converts PNGs with FNA3D, which needs tModLoader's bundled native libraries.
+          NATIVE="$(dirname "$(find "$GITHUB_WORKSPACE/tModLoader" -name 'libFNA3D.so*' | head -1)")"
+          echo "Native libraries: $NATIVE"
+          ls "$NATIVE"
+          echo "LD_LIBRARY_PATH=$NATIVE" >> "$GITHUB_ENV"
 
       - name: Create ModSources/tModLoader.targets
         run: |
