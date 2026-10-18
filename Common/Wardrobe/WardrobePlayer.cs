@@ -123,9 +123,10 @@ public class WardrobePlayer : ModPlayer
 
 			Player.body = body == WardrobeLoadout.Hidden ? -1 : Sample(body).bodySlot;
 			if (Player.body > 0) {
+				// Same as vanilla PlayerFrame: a robe body picks the legs (its skirt) and flags wearsRobe.
 				bool robes = false;
-				int match = Player.SetMatch(1, Player.body, Player.Male, ref robes);
-				if (match > -1) {
+				int match = Match(1, ref robes);
+				if (match != -1) {
 					Player.legs = match;
 					Player.wearsRobe = robes;
 					robeFromWardrobe = robes;
@@ -136,27 +137,38 @@ public class WardrobePlayer : ModPlayer
 		if (head != WardrobeLoadout.None) {
 			Player.head = head == WardrobeLoadout.Hidden ? -1 : Sample(head).headSlot;
 			if (Player.head > 0) {
+				// Female variants.
 				bool unused = false;
-				int match = Player.SetMatch(0, Player.head, Player.Male, ref unused);
-				if (match > -1)
+				int match = Match(0, ref unused);
+				if (match != -1)
 					Player.head = match;
 			}
 		}
 
 		if (legs != WardrobeLoadout.None && !robeFromWardrobe) {
-			if (Player.wearsRobe) {
-				// A wardrobe pick for the legs replaces the skirt of a worn robe.
-				Player.wearsRobe = false;
-			}
+			// A wardrobe pick for the legs replaces the skirt of a worn robe.
+			Player.wearsRobe = false;
 
 			Player.legs = legs == WardrobeLoadout.Hidden ? -1 : Sample(legs).legSlot;
 			if (Player.legs > 0) {
 				bool unused = false;
-				int match = Player.SetMatch(2, Player.legs, Player.Male, ref unused);
-				if (match > -1)
+				int match = Match(2, ref unused);
+				if (match != -1)
 					Player.legs = match;
 			}
 		}
+	}
+
+	private int Match(int armorSlot, ref bool special)
+	{
+		var request = new Player.SetMatchRequest {
+			Head = Player.head,
+			Body = Player.body,
+			Legs = Player.legs,
+			Male = Player.Male,
+			ArmorSlotRequested = armorSlot,
+		};
+		return Player.SetMatch(request, ref special);
 	}
 
 	private int VisibleEquipmentLegs()
@@ -342,6 +354,13 @@ public class WardrobePlayer : ModPlayer
 				effect.Update(Player, state);
 			}
 		}
+	}
+
+	public override void DrawEffects(PlayerDrawSet drawInfo, ref float r, ref float g, ref float b, ref float a, ref bool fullBright)
+	{
+		// The preview lives in the UI, far from any light source.
+		if (IsPreviewDummy)
+			fullBright = true;
 	}
 
 	public override void DrawPlayer(Camera camera)

@@ -24,8 +24,8 @@ public class UISlotTab : UIElement
 		this.tooltip = tooltip;
 		this.isSelected = isSelected;
 		this.isMarked = isMarked;
-		Width.Set(30f, 0f);
-		Height.Set(30f, 0f);
+		Width.Set(28f, 0f);
+		Height.Set(28f, 0f);
 	}
 
 	public override void LeftClick(UIMouseEvent evt)

@@ -34,6 +34,7 @@ public class WardrobeUISystem : ModSystem
 		OpenWardrobeKeybind = null;
 		userInterface = null;
 		state = null;
+		Elements.UIStyle.Unload();
 	}
 
 	public static void Toggle()

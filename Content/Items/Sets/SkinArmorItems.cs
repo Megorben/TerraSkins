@@ -93,7 +93,7 @@ public abstract class SkinArmorItem : ModItem
 			return false;
 
 		// Emissive: ignores lighting, but follows the transparency of the base piece (afterimages, immunity flicker).
-		float pulse = 1f - set.GlowPulse * (0.5f + 0.5f * MathF.Sin(Main.GlobalTimeWrappedHourly * 2.4f));
+		float pulse = 1f - set.GlowPulse * (0.5f + 0.5f * MathF.Sin(Common.Effects.FxClock.Seconds * 2.4f));
 		DrawData glowData = drawData;
 		glowData.texture = glowTexture.Value;
 		glowData.color = Color.White * (drawData.color.A / 255f * pulse);

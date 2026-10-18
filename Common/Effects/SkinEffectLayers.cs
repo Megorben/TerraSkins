@@ -52,7 +52,7 @@ public abstract class SkinEffectLayer : PlayerDrawLayer
 
 		var center = drawInfo.Center - Main.screenPosition;
 		// Per player phase so that two players with the same effect do not animate in lockstep.
-		float time = Main.GlobalTimeWrappedHourly + player.whoAmI * 7.31f;
+		float time = FxClock.Seconds + player.whoAmI * 7.31f;
 		bool inWorld = !wardrobe.IsPreviewDummy && !Main.gameMenu;
 
 		foreach (WardrobeSlot slot in WardrobeSlots.All) {
