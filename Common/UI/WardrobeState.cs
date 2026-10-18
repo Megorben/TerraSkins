@@ -411,7 +411,7 @@ public class WardrobeState : UIState
 	private void StartDrag(UIMouseEvent evt, UIElement target)
 	{
 		// Only the title bar drags the window.
-		if (target != window || evt.MousePosition.Y > window.GetDimensions().Y + TitleHeight + 10f)
+		if (evt.Target != window || evt.MousePosition.Y > window.GetDimensions().Y + TitleHeight + 10f)
 			return;
 
 		dragging = true;
