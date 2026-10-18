@@ -60,14 +60,24 @@ jobs:
           MODS_DIR="$(dirname "$(find "$HOME" -name TerraSkins.tmod | head -1)")"
           echo '["TerraSkins"]' > "$MODS_DIR/enabled.json"
           cd tModLoader
-          timeout 300 dotnet tModLoader.dll -server -autocreate 1 -worldname Smoke -world "$RUNNER_TEMP/Smoke.wld" -maxplayers 2 -port 7779 < /dev/null > "$RUNNER_TEMP/server.out" 2>&1 || true
+          OUT="$RUNNER_TEMP/server.out"
+          # stdin stays open (tail -f) so the server console does not exit on EOF; stop it once it is up
+          tail -f /dev/null | timeout 300 dotnet tModLoader.dll -server -autocreate 1 -worldname Smoke -world "$RUNNER_TEMP/Smoke.wld" -maxplayers 2 -port 7779 > "$OUT" 2>&1 &
+          for i in $(seq 1 300); do
+            if grep -qiE "Server started|listening on port" "$OUT"; then sleep 3; break; fi
+            if ! pgrep -f "tModLoader.dll -server" > /dev/null; then break; fi
+            sleep 1
+          done
+          pkill -f "tModLoader.dll -server" || true
+          sleep 2; pkill -f "tail -f /dev/null" || true
+          wait || true
           LOG="$(find "$HOME" -name server.log | head -1)"
-          echo "---- server output (tail)"; tail -40 "$RUNNER_TEMP/server.out"
+          echo "---- server output (tail)"; tail -40 "$OUT"
           echo "---- server.log (tail)"; tail -80 "$LOG"
           if grep -qiE "TerraSkins.*(exception|error)|(exception|error).*TerraSkins" "$LOG"; then
             echo "TerraSkins failed to load"; exit 1
           fi
-          grep -q "Server started" "$RUNNER_TEMP/server.out" || grep -qi "listening on port" "$RUNNER_TEMP/server.out"
+          grep -qiE "Server started|listening on port" "$OUT"
 
       - name: Upload .tmod
         uses: actions/upload-artifact@v4
