@@ -6,7 +6,6 @@
 	<!-- General -->
 	<PropertyGroup>
 		<AssemblyName>TerraSkins</AssemblyName>
-		<LangVersion>latest</LangVersion>
 	</PropertyGroup>
 
 	<!-- References -->
