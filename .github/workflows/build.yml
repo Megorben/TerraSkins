@@ -1,0 +1,57 @@
+name: Build mod
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      tml_version:
+        description: tModLoader release tag to build against
+        required: false
+        default: v2026.08.3.0
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      TML_VERSION: ${{ github.event.inputs.tml_version || 'v2026.08.3.0' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          path: ModSources/TerraSkins
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Download tModLoader ${{ env.TML_VERSION }}
+        run: |
+          curl -fsSL -o tModLoader.zip "https://github.com/tModLoader/tModLoader/releases/download/${TML_VERSION}/tModLoader.zip"
+          unzip -q tModLoader.zip -d tModLoader
+
+      - name: Create ModSources/tModLoader.targets
+        run: |
+          cat > ModSources/tModLoader.targets <<EOF
+          <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+            <Import Project="${GITHUB_WORKSPACE}/tModLoader/tMLMod.targets" />
+          </Project>
+          EOF
+
+      - name: Build
+        working-directory: ModSources/TerraSkins
+        run: dotnet build -c Release --nologo -warnaserror- -clp:NoSummary
+
+      - name: Collect .tmod
+        run: |
+          mkdir -p dist
+          find "$HOME" -name "TerraSkins.tmod" -exec cp {} dist/ \;
+          ls -la dist
+          test -f dist/TerraSkins.tmod
+
+      - name: Upload .tmod
+        uses: actions/upload-artifact@v4
+        with:
+          name: TerraSkins-tmod
+          path: dist/TerraSkins.tmod

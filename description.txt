@@ -1,0 +1,7 @@
+TerraSkins - a wardrobe of purely cosmetic skins.
+
+Open the wardrobe with the hanger button next to the builder toggles (inventory screen) or with the "Open Wardrobe" hotkey.
+Pick a full outfit or build your own look slot by slot: head, body, legs, wings, capes and other accessory visuals, plus animated effects - auras (black holes, galaxies, divine rays...), halos, orbiting objects, trails and ground effects.
+
+Every slot can use appearances from TerraSkins, from vanilla Terraria and from any other loaded mod.
+Everything is visual only: no stats, no light, no gameplay advantage. Your look is synced in multiplayer.

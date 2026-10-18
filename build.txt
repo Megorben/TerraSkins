@@ -1,0 +1,8 @@
+displayName = TerraSkins
+author = Megorben
+version = 0.1.0
+homepage = https://github.com/Megorben/TerraSkins
+hideCode = false
+hideResources = false
+includeSource = false
+buildIgnore = *.csproj, *.user, *.md, obj\*, bin\*, Properties\*, tools\*, .vs\*
