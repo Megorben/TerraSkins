@@ -41,7 +41,7 @@ jobs:
 
       - name: Build
         working-directory: ModSources/TerraSkins
-        run: dotnet build -c Release --nologo -warnaserror- -clp:NoSummary
+        run: dotnet build -c Release --nologo
 
       - name: Collect .tmod
         run: |
